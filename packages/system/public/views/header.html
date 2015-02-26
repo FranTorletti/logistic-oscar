@@ -1,0 +1,83 @@
+<!--
+<div class="page-header" data-ng-controller="HeaderController">
+  <div class="logo pull-left">
+    <a class="navbar-brand" ui-sref="home" mean-token="'site-title'">MEAN</a>
+  </div>
+
+  <div class="left pull-left">
+    <ul class="navbar-nav nav">
+      <li data-ng-repeat="item in menus.main" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+        <a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="account">
+    <div class="text-edit">
+      <div class="pull-right" data-ng-show="global.authenticated" mean-token-editable></div>
+      <div class="pull-right" data-ng-show="global.authenticated" mean-translate></div>
+    </div>
+    <ul class="navbar-nav nav" data-ng-hide="global.authenticated">
+      <li><a ui-sref='auth.register'>Join</a>
+      </li>
+      <li class="divider-vertical"></li>
+      <li><a ui-sref='auth.login'>Log In</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav nav" data-ng-show="global.authenticated">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          {{global.user.name}} <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/logout">Log Out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+-->
+
+
+<!-- Preloader -->
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#intro">
+                <h1 style="margin: 0 0 30px;text-transform: uppercase;font-family: Montserrat,sans-serif;fontweight: 700;letter-spacing: 1px;">LOGISTICA OSCAR</h1>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#intro">Inicio</a></li>
+    <li><a href="#about">Acerca de Nosotros</a></li>
+<li><a href="#service">Servicios</a></li>
+<li><a href="#contact">Contacto</a></li>
+  </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Section: intro -->
+<section id="intro" class="intro" style="padding: 35% 0 0 0">
+
+<div class="slogan">
+  <h2>BIENVENIDO A <span class="text_color">LOGISTICA OSCAR</span> </h2>
+  <h4>LA EMPRESA DEDICADA A QUE SU PRODUCTO LLEGUE A SU DESTINO EN TIEMPO Y FORMA</h4>
+</div>
+<div class="page-scroll">
+  <a href="#service" class="btn btn-circle">
+    <i class="fa fa-angle-double-down animated"></i>
+  </a>
+</div>
+</section>
+<!-- /Section: intro -->

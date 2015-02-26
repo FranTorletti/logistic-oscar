@@ -1,0 +1,20 @@
+{% for file in aggregatedassets.footer.js %}
+  <script type="text/javascript" src="{{file}}"></script>
+  
+{% endfor %}
+<!-- Core JavaScript Files -->
+    <script src="/theme/assets/js/jquery.min.js"></script>
+    <script src="/theme/assets/js/bootstrap.min.js"></script>
+    <script src="/theme/assets/js/jquery.easing.min.js"></script>	
+	<script src="/theme/assets/js/jquery.scrollTo.js"></script>
+	<script src="/theme/assets/js/wow.min.js"></script>
+	<script src="/theme/assets/js/jquery-1.10.2.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/theme/assets/js/custom.js"></script>
+{% if (process.env.NODE_ENV == 'development') %}
+  <!-- Livereload script rendered -->
+  <!-- Disabling livereload due to - https://github.com/linnovate/mean/issues/929
+       Will probably return in 0.4.2 and new aggregation
+  <script type="text/javascript" src="{{'//' + req.hostname + ':35729/livereload.js'}}"></script>
+  -->
+{% endif %}
